@@ -283,7 +283,7 @@ echo
 echo "1. Cloudflare [1.1.1.1] (default)"
 echo "2. Quad9 [9.9.9.9]"
 echo "3. Google [8.8.8.8]"
-echo "4. private [54.94.32.47]"
+echo "4. private [18.230.195.215]"
 echo
 
 read -p "DNS [1]: " dns_number
