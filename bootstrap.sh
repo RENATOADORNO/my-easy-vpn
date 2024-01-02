@@ -291,9 +291,9 @@ read -p "DNS [1]: " dns_number
 if [ -z ${dns_number} ] || [ ${dns_number} == "1" ]; then
     dns_nameservers="cloudflare"
 else
-  until [[ "$dns_number" =~ ^[2-3]$ ]]; do
+  until [[ "$dns_number" =~ ^[2-4]$ ]]; do
     echo "Invalid DNS choice"
-    echo "Make sure that you answer with either 1, 2 or 3"
+    echo "Make sure that you answer with either 1, 2, 3 or 4"
     read -p "DNS [1]: " dns_number
   done
     case $dns_number in 
