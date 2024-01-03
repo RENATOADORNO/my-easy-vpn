@@ -7,6 +7,8 @@
       {%- else -%}
         {%- if "cloudflare" in dns_nameservers -%}
           {%- set wireguard_dns = "1.1.1.1,1.0.0.1" -%}
+        {%- if "private" in dns_nameservers -%}
+          {%- set wireguard_dns = "18.230.195.215" -%}
         {%- elif "quad9" in dns_nameservers -%}
           {%- set wireguard_dns = "9.9.9.9,149.112.112.112" -%}
         {%- else -%}
