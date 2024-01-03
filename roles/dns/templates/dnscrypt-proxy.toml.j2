@@ -76,8 +76,8 @@ netprobe_address = '8.8.8.8:53'
 
 {% elif 'private' in dns_nameservers %}
 server_names = ['private']
-bootstrap_resolvers = ['18.230.195.215:53', '18.230.195.215']
-netprobe_address = '18.230.195.215:53'
+bootstrap_resolvers = ['18.230.195.215']
+netprobe_address = '18.230.195.215'
 
 {% else %}
 server_names = ['cloudflare']
